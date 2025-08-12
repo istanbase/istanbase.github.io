@@ -1,64 +1,24 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
+  <title>Nturume's site</title>
 </head>
 
-<body style="display: flex; flex-direction: column; justify-content: center; align-content: center; height: 100%; width: 100%;">
-    <div id="infiload" style="display: flex; flex-direction: row; gap: 5px; justify-content: center; align-content: center; font-weight: bold;">
-        <div style="height: 3vh; width: 3vh; background-color: white; border-radius: 5px;"></div>
-        <div style="height: 3vh; width: 3vh; background-color: white; border-radius: 5px;"></div>
-        <div style="height: 3vh; width: 3vh; background-color: white; border-radius: 5px;"></div>
-        <div style="height: 3vh; width: 3vh; background-color: white; border-radius: 5px;"></div>
-        <div style="height: 3vh; width: 3vh; background-color: white; border-radius: 5px;"></div>
-        <div style="height: 3vh; width: 3vh; background-color: white; border-radius: 5px;"></div>
-    </div>
-    <script>
-        const infiload = document.getElementById("infiload");
-        var win = 0;
-        const foo = setInterval(() => {
-            infiload.children.item(win%infiload.children.length).style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255})`
-            win += 1;
-            if (win%infiload.children.length == 0) {
-                for (let i = 0; i < infiload.children.length; i++) {
-                    infiload.children.item(i).style.backgroundColor = `white`
-                }
-            }
+<body style="background-color: black; font-family: Ubuntu;">
 
-            if(win >= 10 && win%infiload.children.length == 0) {
-                clearInterval(foo)
-                for (let i = 0; i < infiload.children.length; i++) {
-                   infiload.children.item(i).remove()
-                }
+  <my-p style="color: lightgreen;">
+    <p>Welcome to my website.</p>
+    <p>I like embedded stuff and gamedev stuff.</p>
+    <p>I am mostly writing C++/C/Rust.</>
+    <p>I am mostly working on Upwork.</p>
+    <p><a href="https://github.com/nturume">Github</a></p>
+    <p><a href="https://x.com/nturumez">X/Twitter</a></p>
+    <p><a href="">Blog</a></p>
+  </my-p>
 
-                infiload.innerText = `FATAL: thread 614211 panic: reached unreachable code
-.../zig/src/Liveness.zig:1545:28: 0x1e75b8d in writeLoopInfo (zig)
-        try data.breaks.put(gpa, block_inst, {});
-                           ^
-.../zig/src/Liveness.zig:1785:34: 0x1e7611b in analyzeInstSwitchBr__anon_934242 (zig)
-                try writeLoopInfo(a, data, inst, old_breaks, old_live);
-                                 ^
-.../zig/src/Liveness.zig:1242:54: 0x1cbeb72 in analyzeBody__anon_500518 (zig)
-        .loop_switch_br => return analyzeInstSwitchBr(a, pass, data, inst, true),
-                                                     ^
-.../zig/src/Liveness.zig:165:24: 0x1966c09 in doTask (zig)
-        try analyzeBody(&a, .loop_analysis, &data, main_body);
-                       ^
-.../zig/src/link.zig:1405:34: 0x17cb03d in flushTaskQueue (zig)
-        for (tasks) |task| doTask(comp, tid, task);
-                                 ^
-.../zig/lib/std/Thread/Pool.zig:182:50: 0x17cb19f in runFn (zig)
-            @call(.auto, func, .{id.?} ++ closure.arguments);
-                                                 ^
-.../zig/lib/std/Thread/Pool.zig:295:32: 0x16a2c82 in entryFn (zig)
-            run_node.data.runFn(&run_node.data, id);
-                               ^
-.../zig/lib/std/os/linux/x86_64.zig:126:5: 0x171fde1 in clone (zig)
-    asm volatile (
-    ^
-???:?:?: 0x0 in ??? (???)`
-            }
-        }, 500)
-    </script>
-</body>
+  <script src="./index.js">
+  </script>
 
-</html>
+</body </html>
