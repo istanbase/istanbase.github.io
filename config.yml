@@ -1,0 +1,122 @@
+baseURL: "https://istanbase.com/" 
+title: Murimi
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+    tag: tags
+
+# menu:
+#     main:
+        # - name: Books
+        #   url: books/
+        #   weight: 5 
+        # - name: Blog
+        #   url: papers/
+        #   weight: 2
+        # - name: Courses
+        #   url: courses/
+        #   weight: 3
+        # - name: Data
+        #   url: data/
+        #   weight: 4 
+        # - name: Blog
+        #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+        #   weight: 6
+
+params:
+    description: "Murimi's website"
+    author: Mkulima
+    # googleAnalyticsID: "G-XXXXX"
+    DateFormat: "January 2006"
+    defaultTheme: light
+    hideFooter: true
+    disableThemeToggle: true
+    ShowShareButtons: false
+    ShowReadingTime: false
+    disableSpecial1stPost: true
+    disableAnchoredHeadings: true
+    ShowPostNavLinks: false
+    ShowBreadCrumbs: false
+    ShowCodeCopyButtons: true
+    ShowAllPagesInArchive: false
+    MainSections: []
+    ShowToc: false
+    disableScrollToTop: true
+    TocOpen: true
+    ShowWordCount: false
+    UseHugoToc: true
+    comments: false
+    math: true
+    profileMode:
+          enabled: true
+          title: "Mkulima"
+          subtitle: ""
+          imageUrl: "picture.jpeg"
+          imageWidth: 160
+          imageHeight: 160
+          buttons:
+            - name: Blog
+              url: posts/
+            # - name: Data
+            #   url: data/
+            # - name: Books
+            #   url: books/
+            # - name: Courses
+            #   url: courses/
+            # - name: Tags
+            #   url: tags/
+            # - name: Archive
+            #   url: archive/
+            # - name: Blog
+            #   url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
+
+    socialIcons:
+        # - name: CV
+        #   url: cv.pdf
+        # - name: Email
+        #   url: mailto:igelfeld@regensburg.edu
+        # - name: Zoom
+        #   url: https://www.zoom.us/my/igelfeld
+        # - name: Location
+        #   url: location/
+        # - name: Office Hours
+        #   url: officehours/
+        # - name: Google Scholar
+        #   url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+        - name: GitHub
+          url: https://github.com/viqiv
+        # - name: Substack
+        #   url: https://pmichaillat.substack.com
+        # - name: YouTube
+        #   url: https://www.youtube.com/@pmichaillat
+        # - name: Twitter
+        #   url: https://x.com/pmichaillat
+        - name: Instagram
+          url: https://instagram.com/viktormurimi
+
+    assets:
+        disableScrollBarStyle: true
+    cover:
+        hiddenInList: true
+        hiddenInSingle: true
+    label:
+      text: "Murimi"
+      icon: favicon.ico
+      iconHeight: 18
+
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
+    highlight:
+        guessSyntax: true
+        style: autumn 
+    tableOfContents:
+        endLevel: 2
+        ordered: false
+        startLevel: 2
