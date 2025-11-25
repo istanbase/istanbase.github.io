@@ -1,5 +1,5 @@
 ---
-title: "How fi Cause a Segfault!!!" 
+title: "Segmentation fault (Core dumped) " 
 date: 2013-01-15
 tags: ["segfault","segmentation fault science"]
 author: ["mkulima"]
